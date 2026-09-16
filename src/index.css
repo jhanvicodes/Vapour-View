@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Global reset — pure immersive condensation mirror */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #0a0a0f;
+  color: rgba(210, 220, 230, 0.9);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent text selection during drawing */
+canvas {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Ensure buttons display a clean interactive pointer cursor */
+button, button * {
+  cursor: pointer !important;
+}
